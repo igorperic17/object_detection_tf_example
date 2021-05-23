@@ -1,0 +1,21 @@
+cmake \
+-DCMAKE_SYSTEM_PROCESSOR=arm64 \
+-DCMAKE_OSX_ARCHITECTURES=arm64 \
+-DWITH_OPENJPEG=OFF \
+-DWITH_IPP=OFF \
+-D CMAKE_BUILD_TYPE=Release \
+-D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-4.5.0/modules \
+-D PYTHON3_EXECUTABLE=/Users/igor/code/projects/venv-tf/bin/python3 \
+-D PYTHON3_NUMPY_INCLUDE_DIR=~/code/projects/venv-tf/lib/python3.8/site-packages/numpy/core/include \
+-D PYTHON3_INCLUDE_DIR=$(python3 -c "from distutils.sysconfig import get_python_inc; print(get_python_inc())") \
+-D PYTHON3_LIBRARY=/Users/igor/code/projects/venv-tf/lib \
+-D BUILD_opencv_python2=OFF \
+-D BUILD_opencv_python3=ON \
+-D INSTALL_PYTHON_EXAMPLES=OFF \
+-D INSTALL_C_EXAMPLES=OFF \
+-D OPENCV_ENABLE_NONFREE=ON \
+-D BUILD_EXAMPLES=OFF \
+-D CMAKE_INSTALL_PREFIX=/Users/igor/code/projects/venv-tf \
+..
+
+
